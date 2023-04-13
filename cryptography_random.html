@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Números aleatorios</title>
+	<script>
+		function generar()
+		{
+		 let array = new Uint8Array(5);
+		 crypto.getRandomValues(array);
+		 capa.innerHTML = "<h1>" + array + "</h1>" ;
+		}	
+</script>
+
+</head>
+<body>
+	<h1>Generar números aleatorios criptográficos</h1>
+	<button onclick="generar()">Generar números aleatorios</button>
+	<div id="capa"></div>
+</body>
+</html>
